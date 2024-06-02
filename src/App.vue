@@ -3,7 +3,9 @@
     <div class="h-screen dark:bg-black">
       <div class="container pt-10 items-center">
         <header>
-          <h1 class="font-semibold text-2xl mb-4 dark:text-white">Todo List</h1>
+          <h1 class="font-semibold text-2xl mb-4 dark:text-white">
+            Todo List Application
+          </h1>
           <div class="flex w-full gap-2 h-11">
             <input
               @keyup.enter="searchTodo(searchKeyTodo)"

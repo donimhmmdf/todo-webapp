@@ -1,6 +1,9 @@
 <template>
   <div class="py-4 mt-5 dark:text-white">
-    <div v-if="todos.length > 0" class="lg:flex lg:justify-start lg:flex-wrap">
+    <div
+      v-if="todos.length > 0"
+      class="lg:flex lg:justify-center lg:flex-wrap lg:gap-2"
+    >
       <ul v-for="(todo, index) in todos" :key="index" class="lg:w-1/3">
         <div
           class="flex justify-between mb-2 items-end rounded-md shadow-md p-4 hover:bg-primary hover:dark:bg-primary hover:dark:bg-opacity-20 dark:bg-neutral-900 hover:bg-opacity-10 duration-500 transition-all"
