@@ -1,9 +1,9 @@
 <template>
-  <div class="py-4 mt-5 shadow-sm">
+  <div class="py-4 mt-5 dark:text-white">
     <div v-if="todos.length > 0" class="lg:flex lg:justify-start lg:flex-wrap">
       <ul v-for="(todo, index) in todos" :key="index" class="lg:w-1/3">
         <div
-          class="flex justify-between mb-2 items-end rounded-md shadow-md p-4 hover:bg-primary hover:bg-opacity-10 duration-500 transition-all"
+          class="flex justify-between mb-2 items-end rounded-md shadow-md p-4 hover:bg-primary hover:dark:bg-primary hover:dark:bg-opacity-20 dark:bg-neutral-900 hover:bg-opacity-10 duration-500 transition-all"
         >
           <div class="flex justify-start">
             <li v-if="todo.isDone" class="border-b-2">
@@ -41,7 +41,7 @@
       <img
         src="../assets/empty.png"
         alt="No todos"
-        class="w-1/2 text-center items-center"
+        class="w-1/2 text-center items-center lg:w-72"
       />
       <h1 class="text-lg font-semibold mt-5">Empty...</h1>
     </div>

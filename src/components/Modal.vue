@@ -4,7 +4,9 @@
       v-if="open"
       class="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50"
     >
-      <div class="bg-white p-4 rounded-lg shadow-lg relative">
+      <div
+        class="bg-white dark:bg-neutral-900 dark:text-white p-4 rounded-lg shadow-lg relative"
+      >
         <button class="absolute top-5 right-5" @click="$emit('close')">
           Close
         </button>
